@@ -69,7 +69,7 @@ namespace C4_Model_Monolith_DDD
 			Notifications.Uses(Database, "", "");
 			Notifications.Uses(ReplicaDatabase, "", "");
 
-
+			Notifications.Uses(contextDiagram.Notification, "API Request", "JSON/HTTPS");
 			Monitoring.Uses(Database, "", "");
 			Monitoring.Uses(ReplicaDatabase, "Replica", "");
 			Monitoring.Uses(ReactiveDatabase, "", "");
